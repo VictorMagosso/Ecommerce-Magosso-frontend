@@ -1,10 +1,10 @@
 import React from 'react'
+import PageDefault from './pages/PageDefault'
 
 function App() {
   return (
-    <div>
-     <h1>E-commerce fera</h1>
-    </div>
+    <PageDefault>
+    </PageDefault>
   );
 }
 
