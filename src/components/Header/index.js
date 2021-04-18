@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import NavList from '../CustomComponents'
+import NavList, { CategoryList, CategoryUl } from '../CustomComponents'
 import './style.css'
 
 const HeaderDiv = styled.menu`
@@ -9,15 +9,26 @@ const HeaderDiv = styled.menu`
     background-color: black;
 `
 const Header = () => {
+    const [cartQtt, setCartQtt] = useState(0)
     return (
     <HeaderDiv>
         <ul>
         <NavList><a href="#">(11) 948494948 <i className="fab fa-whatsapp"></i></a></NavList>
-        <NavList className="last-item"><Link to="/entrar-contato">Entre em contato</Link></NavList>
-        <NavList><Link to="/produtos">Produtos</Link></NavList>
-        <NavList><Link to="/carrinho">Carrinho</Link></NavList>
-        <NavList><Link to="/">Início</Link></NavList>
+        <NavList className="last-item"><Link to="/carrinho">Carrinho <i class="fas fa-shopping-cart"></i> {cartQtt}</Link></NavList>
+        <NavList><Link to="/entrar-contato">Entre em contato</Link></NavList>
+        <NavList><Link to="/produtos-todos">Todos os produtos</Link></NavList>
+        <NavList><Link to="/produtos-vikings">Especial Vikings</Link></NavList>
+        <NavList id="category-item"><Link to="/">Categorias <i className="fas fa-chevron-down"></i></Link>
+            <CategoryUl className="category-list">
+                <CategoryList><Link to="/produtos-miniaturas"><i className="fas fa-chevron-right"></i> Miniaturas</Link></CategoryList>
+                <CategoryList><Link to="/produtos-madeira"><i className="fas fa-chevron-right"></i> Produtos de madeira</Link></CategoryList>
+                <CategoryList><Link to="/produtos-armas-brancas"><i className="fas fa-chevron-right"></i> Armas brancas</Link></CategoryList>
+                <CategoryList><Link to="/produtos-culturais"><i className="fas fa-chevron-right"></i> Culturais</Link></CategoryList>
+                <CategoryList><Link to="/produtos-colecionaveis"><i className="fas fa-chevron-right"></i> Colecionáveis</Link></CategoryList>
+            </CategoryUl>
+        </NavList>
         </ul>
+
     </HeaderDiv>
     )}
 

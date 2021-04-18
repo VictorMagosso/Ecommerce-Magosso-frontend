@@ -1,3 +1,7 @@
 .last-item{
     margin-right: 3em;
 }
+
+#category-item:hover > .category-list {
+    display: block;
+}

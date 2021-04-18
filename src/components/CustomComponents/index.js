@@ -20,4 +20,31 @@ const NavList = styled.li`
     }
 `
 
+
+export const CategoryUl = styled.ul`
+    position: absolute;
+    background: white;
+    display: none;
+    padding: 8px 1em 8px 1em;
+    
+    &:hover {
+        margin-top: 1em;
+        transition: 0.7s linear;
+    }
+`
+
+export const CategoryList = styled.li`
+    list-style: none;
+    padding: 12px 12px;
+
+    & a {
+        color: #333333;
+    }
+
+    &:hover a {
+        color: grey;
+        border-bottom: 1px solid grey;
+        transition: 0.3s linear;
+    }
+`
 export default NavList
