@@ -1,26 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import NavList from '../CustomComponents'
+import './style.css'
 
-const NavList = styled.li`
-    list-style: none;
-    display: inline;
-    margin-left: 2em;
-    float: right;
+const HeaderDiv = styled.menu`
+    color: white;
+    background-color: black;
 `
-
 const Header = () => {
     return (
-    <>
-    <menu>
+    <HeaderDiv>
         <ul>
-        <NavList><Link to="/entrar-contato">Entre em contato</Link></NavList>
+        <NavList><a href="#">(11) 948494948 <i className="fab fa-whatsapp"></i></a></NavList>
+        <NavList className="last-item"><Link to="/entrar-contato">Entre em contato</Link></NavList>
         <NavList><Link to="/produtos">Produtos</Link></NavList>
         <NavList><Link to="/carrinho">Carrinho</Link></NavList>
-        <NavList><Link to="/">Home</Link></NavList>
+        <NavList><Link to="/">Início</Link></NavList>
         </ul>
-    </menu>
-    </>
+    </HeaderDiv>
     )}
 
 export default Header

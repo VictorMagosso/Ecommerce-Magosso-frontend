@@ -1,11 +1,21 @@
 import React from 'react'
-import styled from 'styled-components'
+import './styles.css'
+
+import NavList from '../CustomComponents'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
-    <>
-    <h1>Footer</h1>
-    </>
+        <>
+            <menu>
+                <ul>
+                <NavList><Link to="/entrar-contato">Entre em contato</Link></NavList>
+                <NavList><Link to="/produtos">Produtos</Link></NavList>
+                <NavList><Link to="/carrinho">Carrinho</Link></NavList>
+                <NavList><Link to="/">Início</Link></NavList>
+                </ul>
+            </menu>
+        </>
     )}
 
 export default Footer
