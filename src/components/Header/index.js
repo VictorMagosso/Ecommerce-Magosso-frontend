@@ -14,9 +14,9 @@ const Header = () => {
     <HeaderDiv>
         <ul>
         <NavList><a href="#">(11) 948494948 <i className="fab fa-whatsapp"></i></a></NavList>
-        <NavList className="last-item"><Link to="/carrinho">Carrinho <i class="fas fa-shopping-cart"></i> {cartQtt}</Link></NavList>
+        <NavList className="last-item"><Link to="/carrinho">Carrinho <i className="fas fa-shopping-cart"></i> {cartQtt}</Link></NavList>
         <NavList><Link to="/entrar-contato">Entre em contato</Link></NavList>
-        <NavList><Link to="/produtos-todos">Todos os produtos</Link></NavList>
+        <NavList><Link to="/produtos">Todos os produtos</Link></NavList>
         <NavList><Link to="/produtos-vikings">Especial Vikings</Link></NavList>
         <NavList id="category-item"><Link to="/">Categorias <i className="fas fa-chevron-down"></i></Link>
             <CategoryUl className="category-list">
