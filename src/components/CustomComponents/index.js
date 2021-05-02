@@ -5,6 +5,7 @@ const NavList = styled.li`
     list-style: none;
     display: inline;
     float: right;
+    margin-top: 21px;
     padding: 8px 12px;
     color: ${props => props.default ? '#999999' : '#FFFFFF'};
 

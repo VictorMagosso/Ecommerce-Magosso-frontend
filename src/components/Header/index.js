@@ -1,24 +1,34 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { Chariot, Logo } from '../../utils/images'
 import NavList, { CategoryList, CategoryUl } from '../CustomComponents'
+
 import './style.css'
 
 const HeaderDiv = styled.menu`
+    margin: 0 75px;
     color: white;
-    background-color: black;
+    background-color: transparent;
 `
 const Header = () => {
     const [cartQtt, setCartQtt] = useState(0)
     return (
     <HeaderDiv>
+        <div className="logo-menu">
+            <Link to="/home"><img width="70%" src={Logo}/></Link>
+        </div>
+
+        <div className="chairot-menu">
+            <Link to="/carroca"><img width="35" src={Chariot}/></Link>
+            <span className="qtt-chariot">{cartQtt}</span>
+        </div>
         <ul>
-        <NavList><a href="#">(11) 948494948 <i className="fab fa-whatsapp"></i></a></NavList>
-        <NavList className="last-item"><Link to="/carrinho">Carrinho <i className="fas fa-shopping-cart"></i> {cartQtt}</Link></NavList>
-        <NavList><Link to="/entrar-contato">Entre em contato</Link></NavList>
-        <NavList><Link to="/produtos">Todos os produtos</Link></NavList>
-        <NavList><Link to="/produtos-vikings">Especial Vikings</Link></NavList>
-        <NavList id="category-item"><Link to="/">Categorias <i className="fas fa-chevron-down"></i></Link>
+        
+        <NavList><Link to="/entrar-contato">CONTATO</Link></NavList>
+        <NavList><a href="#custom">PERSONALIZAR</a></NavList>
+        <NavList><Link to="/produtos-vikings">ESPECIAL VIKINGS</Link></NavList>
+        <NavList id="category-item"><Link to="/">PRODUTOS</Link>
             <CategoryUl className="category-list">
                 <CategoryList><Link to="/produtos-miniaturas"><i className="fas fa-chevron-right"></i> Miniaturas</Link></CategoryList>
                 <CategoryList><Link to="/produtos-madeira"><i className="fas fa-chevron-right"></i> Produtos de madeira</Link></CategoryList>

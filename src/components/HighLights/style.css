@@ -1,0 +1,26 @@
+.highlight-container {
+    color: #000000;
+    background-color: #F5F5F5;
+    height: 100%;
+    padding-top: 12px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.flex-highlights {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-highlights-item {
+    width: 353px;
+    height: 460px;
+}
+
+.card-flex-highlight {
+    margin-top: 69px;
+    background-color: white;
+    box-shadow: 0px 0px 35px -17px #000000;
+    border-radius: 12px;
+    width: 314px;
+    height: 388px;
+}

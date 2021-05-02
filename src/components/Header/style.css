@@ -5,3 +5,24 @@
 #category-item:hover > .category-list {
     display: block;
 }
+
+.logo-menu {
+    float: left;
+    width: 12%;
+}
+
+.chairot-menu {
+    cursor: pointer;
+    display: flex;
+    width: 140px;
+    margin-left: 69px;
+    float: right;
+    border: .5px solid #838383;
+    padding: 16px;
+}
+
+.qtt-chariot {
+    margin-left: 16px;
+    height: auto;
+    align-self: center;
+}

@@ -1,11 +1,11 @@
 body {
-  margin: 0 75px;
-  font-family: Lora, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  margin: 0 0px;
+  font-family: Arsenal, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1a1f29;
+  background: #000 url("../src/assets/Banner.png") no-repeat fixed center;
   color: white;
 }
 

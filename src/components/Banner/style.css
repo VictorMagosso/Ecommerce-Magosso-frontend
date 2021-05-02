@@ -1,0 +1,35 @@
+.explore-btn {
+    width: 419px;
+    height: 90px;
+    left: 51px;
+    top: 474px;
+    background-color: #373e4d00;
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: .3s linear;
+    
+    border: 1px solid #373E4D;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.explore-btn:hover {
+    background-color: #373e4d2f;
+}
+
+.img-compass {
+    margin-left: 12px;
+    margin-top: 7px;
+}
+
+.swords {
+    float: right;
+    margin-right: 75px;
+    margin-top: 40px;
+}
+.left-side {
+    float: left;
+    margin-left: 75px;
+}
