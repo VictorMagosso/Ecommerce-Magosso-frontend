@@ -16,6 +16,7 @@ import upload from '../assets/upload.svg';
 import whatsapp from '../assets/whatsapp.svg';
 import banner from '../assets/Banner.png';
 import swordAlt from '../assets/sword_alt.png';
+import lineDecoration from '../assets/linedecoration.svg';
 
 export const Logo = logo;
 export const Adaga = adaga;
@@ -35,4 +36,5 @@ export const Upload = upload;
 export const Whatsapp = whatsapp;
 export const BannerImage = banner;
 export const SwordAlt = swordAlt;
+export const LineDecoration = lineDecoration;
 
