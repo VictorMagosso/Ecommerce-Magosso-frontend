@@ -8,36 +8,55 @@
     padding-bottom: 80px;
 }
 .flex-highlights {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 0px;
+    height: 610px;
 }
 
 .flex-highlights-item {
+    margin-bottom: 50px;
     width: 353px;
-    height: 460px;
+    height: 540px;
 }
 
 .card-flex-highlight {
+    transition: .4s linear;
+    cursor: pointer;
     padding: 19px;
-    margin-top: 69px;
+    margin-top: 180px;
     background-color: white;
-    box-shadow: 0px 0px 35px -17px #000000;
+    box-shadow: 0px 0px 15px -17px #000000;
     border-radius: 12px;
     width: 314px;
     height: 388px;
 }
 
+.card-flex-highlight:hover {
+    transition: .4s linear;
+}
+
+.card-flex-highlight:hover .product-img {
+    margin-left: -150px;
+    width: 300px;
+    height: 300px;
+    margin-top: -175px;
+    filter: drop-shadow(0px 30px 10px rgba(0, 0, 0, 0.25));
+}
+
+.img-title {
+    display: flex;
+    justify-content: space-between;
+}
+
 .product-img {
-    position: absolute;
-    left: 190px;
-    filter: drop-shadow(0px 0px 19px rgba(0, 0, 0, 0.25));
+    transition: .4s linear;
+    margin-top: -110px;
+    margin-left: 10px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
 }
 
 .product-title {
     font-weight: bold;
     font-size: 31px;
-    width: 202px;
 }
 
 .product-description {
@@ -52,8 +71,10 @@
     height: 130px;
 }
 #product-actions {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
-    bottom: 0;
+    bottom: 25px;
 }
 .money-component {
     text-align: center;
@@ -61,7 +82,9 @@
 
 .add-product-btn {
     cursor: pointer;
+    font-size: 16px;
     color: white;
+    height: 39px;
     width: 163px;
     padding: 8px 0;
     background: #373E4D;
@@ -70,7 +93,37 @@
     border-radius: 8px;
 }
 
-.product-qtt-input {
+.qtt-number {
+    font-size: 18px;
+    text-align: center;
+    height: 39px;
     width: 103px;
     right: 0;
+    border: 0.4px solid #373E4D;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-top: 7px;
+    margin-left: 57px;
+}
+
+input[type=number] {
+	width: 80px;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+input[type=number]::-webkit-inner-spin-button { 
+    all: unset; 
+    min-width: 21px;
+    min-height: 45px;
+    margin: 17px;
+    padding: 0px;
+    background-image: 
+    linear-gradient(to top, transparent 0px, transparent 16px, #fff 16px, #fff 26px, transparent 26px, transparent 35px, #000 35px,#000 36px,transparent 36px, transparent 40px),
+    linear-gradient(to right, transparent 0px, transparent 10px, #000 10px, #000 11px, transparent 11px, transparent 21px);
+    transform: rotate(90deg) scale(0.8, 0.9);
+    cursor:pointer;
+}
+
+.custom-form-container {
+    margin-top: 52px;
+    height: 100vh;
 }
