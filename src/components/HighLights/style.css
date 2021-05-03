@@ -125,5 +125,81 @@ input[type=number]::-webkit-inner-spin-button {
 
 .custom-form-container {
     margin-top: 52px;
-    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-custom {
+    margin-top: 52px;
+    margin-left: 75px;
+}
+
+.img-custom p {
+    text-align: center;
+    width: 360px;
+}
+.form-area {
+    display: inline;
+    width: 50%;
+}
+
+.input-form-custom {
+    background: #FFFFFF;
+    border: 0.3px solid #FFD362;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 100%;
+    height: 51px;
+    margin-top: 6px;
+    margin-bottom: 17px;
+    padding-left: 18px;
+}
+
+.input-form-custom-textarea {
+    background: #FFFFFF;
+    border: 0.3px solid #FFD362;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 100%;
+    height: 114px;
+    margin-top: 6px;
+    margin-bottom: 17px;
+    padding-left: 18px;
+}
+.prefix-upload {
+    width: 65px;
+    height: 31px;
+    padding: 8px;
+    background-color: #69B2F6;
+    border-radius: 8px 0 0 8px;
+}
+
+.sufix-upload {
+    width: 510px;
+    height: 45px;
+    padding-left: 16px;
+    background-color: #E5E5E5;
+    border: none;
+    border-radius: 0 8px 8px 0;
+}
+.flex-upload {
+    margin-top: 12px;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+.submit-style {
+    margin-top: 23px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    width: 100%;
+    height: 58px;
+    color: white;
+    border: none;
+    font-size: 24px;
+    background: #373E4D;
+    border-radius: 8px;
 }

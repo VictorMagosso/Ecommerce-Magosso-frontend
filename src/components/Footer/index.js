@@ -1,21 +1,34 @@
 import React from 'react'
-import './styles.css'
+import styled from 'styled-components'
 
 import NavList from '../CustomComponents'
 import { Link } from 'react-router-dom'
 
+import './styles.css'
+import { Logo } from '../../utils/images'
+
 const Footer = () => {
     return (
-        <>
-            <menu>
+        <div className="footer-container">
+            <div>
                 <ul>
-                <NavList><Link to="/entrar-contato">Entre em contato</Link></NavList>
-                <NavList><Link to="/produtos">Produtos</Link></NavList>
-                <NavList><Link to="/carrinho">Carrinho</Link></NavList>
-                <NavList><Link to="/">Início</Link></NavList>
+                    <li className="li-footer"><Link to="/entrar-contato">Produtos</Link></li>
+                    <li className="li-footer"><Link to="/produtos">Especial Vikings</Link></li>
+                    <li className="li-footer"><Link to="/carrinho">Personalizar</Link></li>
+                    <li className="li-footer"><Link to="/">Contato</Link></li>
                 </ul>
-            </menu>
-        </>
+                <ul>
+                    <li className="li-footer"><Link to="/entrar-contato">Saiba mais</Link></li>
+                </ul>
+            </div>
+            <div className="social-media">
+                <a href="#">(11) 97237-7935 <i className="fab fa-whatsapp"></i></a>
+                <a href="#"><i className="fab fa-instagram"></i> @magoreplicas</a>
+            </div>
+            <div className="social-media">
+                <img width="100" src={Logo}/>
+            </div>
+        </div>
     )}
 
-export default Footer
+export default Footer;

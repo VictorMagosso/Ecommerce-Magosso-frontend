@@ -18,6 +18,9 @@ import banner from '../assets/Banner.png';
 import swordAlt from '../assets/sword_alt.png';
 import lineDecoration from '../assets/linedecoration.svg';
 import lineDecorationBlue from '../assets/linedecorationblue.svg';
+import customImg from '../assets/3d.svg';
+import compassVikings from '../assets/runes.png';
+import helmetAxes from '../assets/helmet_axes.png'
 
 export const Logo = logo;
 export const Adaga = adaga;
@@ -39,4 +42,7 @@ export const BannerImage = banner;
 export const SwordAlt = swordAlt;
 export const LineDecoration = lineDecoration;
 export const LineDecorationBlue = lineDecorationBlue;
+export const CustomImg = customImg;
+export const CompassVikings = compassVikings;
+export const HelmetAxes = helmetAxes;
 

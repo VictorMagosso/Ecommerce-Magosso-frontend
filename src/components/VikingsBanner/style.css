@@ -1,0 +1,22 @@
+.vikings-container {
+    height: 100vh;
+    background: url("../../assets/vikingsbg.png") no-repeat center fixed;
+}
+
+.compass-viking {
+    float: right;
+    margin: 29px;
+}
+
+.explore-vikings-btn {
+    cursor: pointer;
+    color: white;
+    font-size: 36px;
+    float: right;
+    background: rgba(55, 62, 77, 0.38);
+    border: 1px solid #69B2F7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 670px;
+    height: 82px;
+}

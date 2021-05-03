@@ -1,4 +1,22 @@
 .footer-container {
-    background-color: black;
-    color: red;
+    border: 1px solid rgba(255, 0, 0, 0);
+    height: 208px;
+    background-color: #373E4D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.li-footer {
+    font-size: 18px;
+    list-style: none;
+    font-variant-caps: all-petite-caps;
+}
+
+.social-media a, i{
+    font-size: 24px;
+    margin-right: 22px;
+}
+.social-media {
+    margin-top: 62px;
 }
